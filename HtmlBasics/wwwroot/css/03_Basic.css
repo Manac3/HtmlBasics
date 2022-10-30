@@ -1,0 +1,65 @@
+﻿body {
+    background-color: gainsboro;
+}
+.mylabelclass {
+    color: green;
+}
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 80px;
+    border-style: solid;
+    border-color: red;
+    border-width: 4px 0 0 0;
+    border-radius: 80px;
+}
+
+    hr.style-seven:before { /* Not really supposed to work, but does */
+        display: block;
+        content: "";
+        height: 80px;
+        margin-top: -31px;
+        border-style: solid;
+        border-color: yellow;
+        border-width: 0 0 4px 0;
+        border-radius: 80px;
+    }
+    .myinputclass {
+        border-radius: 7px;
+        width: 95%;
+    }
+#mydivid {
+    
+    background-image: url('../fies/profile-pic.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding-top: 30px;
+    padding-left: 50px;
+
+}
+#mydivid span {
+    /*margin: 50px 0px 0px 100px;*/
+    color: rgb(255, 165, 0);
+}
+.mya:link {
+    text-decoration: none;
+    color: #ff6a00;
+    font-family:'Comic Sans MS';
+    font-size: 20px;
+}
+
+.mya:hover{
+    text-decoration: none;
+    color: #0000ff;
+    font-family: Impact;
+    font-size: 30px;
+    cursor: crosshair;
+}
+.mya:visited {
+    text-decoration: none;
+    color: #ff0000;
+    font-family: 'Malgun Gothic';
+    font-size: 25px;
+}

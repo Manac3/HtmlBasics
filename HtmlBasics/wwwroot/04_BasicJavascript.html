@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basic Javascript</title>
+
+    <body>
+    </body>
+    <script type="text/javascript">
+        var isim = "Mehmet Anaç"
+        alert(isim);
+        console.log(isim);
+
+        topla(3, 7);
+        var s1 = 3;
+        var s2 = 7;
+        var sonuc = carp(s1, s2);
+        console.log('Çarpım: ' + sonuc);
+        function topla(no1, no2) {
+            var sonuc = no1 + no2;
+            console.log(sonuc);
+        }
+        function carp(no1, no2) {
+            return no1 * no2;
+
+        }
+    </script>
+    <script>
+        var s3 = 20;
+        var s4 = 20;
+        var result = (sırala(s3, s4));
+
+        if (result == null)
+            console.log('iki sayı birbirine eşittir.');
+        else
+            console.log('Büyük Sayı: ' + result);
+        function sırala(s3, s4) {
+            var sonuc;
+            if (s3 < s4)
+                sonuc = s4;
+            if (s3 = s4)
+                sonuc = null;
+            else
+                sonuc = s3;
+            return sonuc;
+        }
+
+    </script>
+    <script>
+        var s5 = 2;
+        var s6 = 4;
+        var s7 = 4;
+        console.log(sırala1(s5, s6, s7));
+        function sırala1(a1, a2, a3) {
+            var sonuc;
+            if (a1 < a2 & a2 > a3)
+                sonuc = a2;
+            else if (a1 > a2 & a1 > a3)
+                sonuc = a1;
+            else if (a3 > a1 & a3 > a2)
+                sonuc = a3;
+            else
+                sonuc = 'Büyük sayı eşitlikten dolayı bulunamadı... ';
+            return sonuc;
+        }
+
+    </script>
+    <script>
+        if (1 == 1) {
+            console.log("1 eşittir 1");
+        }
+        if ("1" == 1) {
+            console.log("1 == 1"); //bunu ekrana yazdırır tiplere bakmaz 2 eşit kullandığımızda
+        }
+        if ("1" === 1) {
+            console.log("1==  1"); // bunu ekrana yazdırmaz 3 eşitlikte tipe de bakar ve eşitlik vermez
+        }
+        if ("1" === "1") {
+            console.log("1==   1") // burda tip ve değer eşitlendiği için ekrana yazdırır.
+        }
+    </script>
+    <script src="05_BasicJavaScript.js"></script>
+</head>
+<body>
+    <label>Ad:</label>
+    &nbsp;
+    <input id="tbAd" type="text" />
+    <br />
+    <label>Soyad:</label>
+    &nbsp;
+    <input id="tbSoyad" type="text" />
+    <br />
+    <button onclick="adSoyadBirlestir()">Birlestir</button>
+    <br />
+
+    <p class="sonuc"></p>
+</body>
+</html>
